@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+
+        .dropBtn {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+        }
+
+        .dropdown-content {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            width: 150px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: #000;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #eee;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="dropdown">
+        <button class="dropBtn" id="dropBtn">선택</button>
+        <div class="dropdown-content" id="dropdown-content">
+            <a href="#">Home</a>
+            <a href="#">Intro</a>
+            <a href="#">Service</a>
+            <a href="#">ContactUs</a>
+        </div>
+    </div>
+
+
+    <script>
+
+        $("#dropBtn").click(function(){
+            //$("#dropdown-content").slideToggle(100);
+            $("#dropdown-content").fadeToggle(500);
+        })
+
+    </script>
+
+</body>
+</html>

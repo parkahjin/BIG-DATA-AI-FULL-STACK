@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        // 객체 {}: 1명 분
+        // 3명을 객체로 다뤄야 된다... [{}, {}, {}]
+
+        let user = {
+            "id" : 1,
+            "userid" : "yangjung",
+            "passwd" : "1234",
+            "age" : 20
+        };
+
+        console.log(user.age);
+        console.log(user["userid"]);
+
+        user.userid = "busan";
+        console.log(user);
+
+        // 배열 -> forEach
+        // 객체 -> for(let key in 배열) {출력}
+        // console.log(user["userid"]);
+
+        for(let key in user) {
+            console.log(user[key]);
+        }
+
+
+
+    </script>
+
+</body>
+</html>

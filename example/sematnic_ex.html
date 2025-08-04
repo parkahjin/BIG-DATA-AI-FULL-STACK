@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시멘틱 실무 예제</title>
+
+
+    <style>
+        
+        main{
+            display: flex;
+            padding: 20px;
+        }
+
+        section{
+            flex: 3;
+        }
+
+        article{
+            background-color: #eee;
+            padding: 20px 10px;
+            margin-bottom: 20px;
+        }
+
+        aside{
+            flex: 1;
+            background-color: #f9f9f9;
+        }
+
+        header{
+            background-color: #333;
+            padding: 20px;
+            padding-left: 15px;
+        }
+
+        header h1, header p{
+            color: #fff;
+        }
+
+        nav{
+            background-color: #f4f4f4;
+            padding: 20px 0;
+        }
+
+        footer{
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>내 블로그</h1>
+        <p>시멘틱 태그로 만든 웹 사이트 구조</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">연락처</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <section>
+            <article>
+                <h2>첫 번째 게시글</h2>
+                <p>첫 번째 게시글입니다. 시멘틱 태그를 이용했습니다.</p>
+            </article>
+            <article>
+                <h2>두 번째 게시글</h2>
+                <p>두 번째 게시글입니다. 시멘틱 태그를 이용했습니다.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>사이드 바</h3>
+            <p>여기는 퀵 메뉴나 광고, 기타 정보를 넣는 곳</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025년 양정인력개발센터 웹사이트. 모든 권리</p>
+    </footer>
+
+</body>
+</html>

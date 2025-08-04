@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <style>
+
+        .zoomImg {
+            width: 200px;
+            transition: width .2s ease;            
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <img src="images/woman2.jpg" alt="여자2" id="zoomImg" class="zoomImg">
+
+
+    <script>
+
+        $("#zoomImg").hover(function(){
+            $(this).css({
+                "width" : "400px"
+            })
+        }, function(){
+            $(this).css({
+                "width" : "200px"
+            })
+        });
+
+    </script>
+
+</body>
+</html>

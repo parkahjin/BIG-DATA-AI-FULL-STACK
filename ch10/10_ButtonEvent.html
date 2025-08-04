@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼 이벤트 + 함수</title>
+</head>
+<body>
+    
+    <button class="btn02">버튼02</button>
+    <button class="btn03">버튼03</button>
+
+    <script>
+
+        let btn2 = document.querySelector(".btn02");
+        let btn3 = document.querySelector(".btn03");
+
+        btn2.onclick = function() {
+            alert("2번 출력");
+            document.body.style.backgroundColor="red";
+        }
+
+        btn3.addEventListener('click', function() {
+            alert("3번 출력");
+            document.body.style.backgroundColor="blue";
+        }) 
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 폼 체크</title>
+
+
+    <style>
+
+        input[type="text"]{
+            background-color: red;
+        }
+
+        input[type="text"]:hover{
+            background-color: blue;
+        }
+
+        input[type="password"]{
+            background-color: #000;
+        }
+
+        input[type="password"]:focus{
+            background-color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form method="post" onsubmit="return checkLogin()">
+
+        <input type="text" name="userid" class="userid" id="userid" placeholder="아이디">
+        <br>
+        <input type="password" name="passwd" class="passwd" id="passwd" placeholder="비밀번호">
+        <br>
+        <input type="submit" value="로그인">
+
+    </form>
+
+    <script>
+        function checkLogin(){
+
+            let str1 = document.getElementById("userid");
+            let str2 = document.getElementById("passwd");
+
+            let userID = str1.value.trim();
+            
+            let passWd = str2.value.trim();
+
+            if(userID==""){
+                alert("아이디를 입력해 주세요.")
+                str1.focus();
+                return false;
+            }
+
+            if(userID.length<8){
+                alert("아이디는 8자리 이상이어야 합니다.");
+                str1.value = "";
+                str1.focus();
+                return false;
+            }
+
+            if(passWd==""){
+                alert("비밀번호를 입력하세요.");
+                str2.focus();
+                return false;
+            }
+
+
+        }
+    </script>
+
+</body>
+</html>

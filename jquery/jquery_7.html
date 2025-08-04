@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 제어하기</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <style>
+
+        .changeBtn {
+            background-color: orangered;
+            color: #fff;
+            border: 0;
+            padding: 10px 20px;
+            font-size: 1.25rem; /* 20px */
+            cursor: pointer;
+        }
+        
+        .changeBtn:hover {
+            background-color: rgb(150, 41, 1);
+            transition: .3s;
+        }
+
+        .returnBtn {
+             background-color: orangered;
+            color: #fff;
+            border: 0;
+            padding: 10px 20px;
+            font-size: 1.25rem; /* 20px */
+            cursor: pointer;
+        }
+
+        .returnBtn:hover {
+            background-color: rgb(150, 41, 1);
+            transition: .3s;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <img id="img1" src="images/woman1.jpg" alt="여자1" title="여자1">
+    <button id="changeBtn" class="changeBtn">이미지 변경하기</button>
+    <button id="returnBtn" class="returnBtn">이미지 되돌리기</button>
+
+    <script>
+
+        $("#changeBtn").click(function(){
+            $("#img1").attr({
+                "src" : "images/woman2.jpg",
+                "alt" : "여자2",
+                "title" : "여자2"
+            });
+        });
+
+        $("#returnBtn").click(function(){
+            $("#img1").attr({
+                "src" : "images/woman1.jpg",
+                "alt" : "여자1",
+                "title" : "여자1"
+            });
+        });
+
+
+
+    </script>
+
+</body>
+</html>

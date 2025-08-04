@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트로 배열 다루기</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // 사과, 바나나, 배 저장하는 배열
+        let fruits = ["사과", "바나나", "배"];
+        console.log(`1번 배열: ${fruits[1]}`);
+
+        // 복숭아를 배열의 맨 끝에 추가하기 push(값)
+        // 제거 -> pop()
+        fruits.push("복숭아");
+        console.log(`3번 배열: ${fruits[3]}`);
+
+        fruits.pop();
+        console.log(fruits);
+
+        // 앞에 추가, 삭제
+        // shift(), unshift()
+        let numbers = [1,2,3];
+        numbers.unshift(0);
+        console.log(numbers);
+
+        numbers.shift();
+        console.log(numbers);
+
+        // 반복문으로 출력
+        // forEach()를 이용해서 출력
+        fruits.forEach(
+            (f, idx) => {console.log(`${idx}번: ${f}`)}
+        );
+
+        console.log("-------------------------------------")
+
+        numbers.forEach(
+            (number, idx) => {console.log(`배열 숫자: ${number}`)}
+        );
+
+    </script>
+
+</body>
+</html>

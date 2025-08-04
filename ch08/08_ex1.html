@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹사이트 예제(미디어 쿼리: 해상도에 따라 다르게 보이는 법)</title>
+
+    <style>
+
+        .box {
+            background-color: red;
+            color: #fff;
+            height: 400px;
+        }
+
+        /* 해상도 1000px 탭일 때는 파랑 */
+        @media (max-width: 1000px) {
+            .box {
+                background-color: blue;
+                height: 600px;
+            }
+
+            h2 {
+                font-size: 0.875rem;
+            }
+        }
+
+        /* 해상도 500px 모바일일 때는 파랑 */
+        @media (max-width: 500px) {
+            .box {
+                background-color: black;
+                height: 100vh;
+            }
+
+            h2 {
+                font-size: 0.75rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 웹, 탭, 스마트폰(큰->작) or (작->큰)으로 만들어야함
+        1920(생략가능) -> 1000 -> 500
+         배경 빨, 파, 검 -->
+    <div class="box">
+        <h1>양정인력개발센터</h1> <!-- rem으로 -->
+    </div>
+
+</body>
+</html>

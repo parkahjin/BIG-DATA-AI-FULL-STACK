@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+
+
+    <style>
+
+       #sel{
+        background-color: red;
+        font-style: italic;
+       } 
+
+       .sel{
+        background-color: blue;
+        color: #fff;
+       }
+
+       div{
+        background-color: yellow;
+       }
+
+       /*div div{
+        background-color: #000;
+        color: #fff;
+       }*/
+
+       /*div div:first-child{
+        background-color: aqua;
+       }
+
+       div div:last-child{
+        background-color: orange;
+       }*/
+
+       div div:nth-child(2){
+        background-color: purple;
+       }
+
+       .res:hover{
+        background-color: cornflowerblue;
+       }
+
+    </style>
+</head>
+
+<body>
+
+        <!-- 아이디 선택자  -->
+        <div id="sel">아이디 선택자</div>
+
+
+        <!-- 클래스 선택자 -->
+        <div class="sel">클래스 선택자</div>
+
+
+        <!-- html 태그 선택자  -->
+        <div>태그 선택자</div>
+
+
+        <!-- 후손 선택자 -->
+        <!-- <div>
+            부모
+            <div>
+                자식
+            </div>
+        </div> -->
+
+        <!-- 자손 선택자 -->
+         <div>
+            부모
+            <div>자식1</div>
+            <div>자식2</div>
+         </div>
+
+
+         <!-- 반응 선택자 -->
+         <div class="res">
+            반응 선택자
+         </div>
+
+
+</body>
+</html>

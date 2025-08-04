@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 양식 예제</title>
+
+
+
+</head>
+
+<body>
+    <!-- 입력, 수정 동작을 하기 위해서는 -->
+    <!-- 1. method: get(검색할 때 사용, 보여져도 됨, 속도 빠름), 
+                    post(사용자 정보 쓸 때 사용, 숨김, 속도 느림) 
+
+         2. action: 어디로 보내서 처리할까? -> 프로그램 파일 이름
+
+         3. enctype: 첨부파일 넣을 때 필요한 설정 
+         
+         ex) <form method="" action="" enctype="multipart/form-data"></form>
+         -->
+
+         <h2>회원가입 프로그램</h2>
+         <form action="" method="post" enctype="multipart/form-data">
+
+            <label>* Userid</label>
+            <input type="text" name="userid" placeholder="아이디를 입력하세요" required> <button>아이디 확인</button>
+            <p>아이디는 8~12자리 미만, 영어대소문자 숫자를 포함하세요.</p>
+           
+            <label>* Password</label>
+            <input type="password" name="passwd" placeholder="비밀번호" required>
+            <br>
+            <label>* Password Check</label>
+            <input type="password" name="repasswd" placeholder="비밀번호 확인" required>
+            <br>
+
+            <label>* Name</label>
+            <input type="text" name="username" placeholder="이름" required>
+            <br>
+
+            <label>E-mail</label>
+            <input type="text" name="mail" placeholder="이메일은 생략 가능">
+            <br>
+
+            <label>거주지역</label>
+            <select>
+                <option>지역을 선택하세요</option>
+                <option value="서울">서울특별시</option>
+                <option value="부산">부산광역시</option>
+                <option value="인천">인천광역시</option>
+                <option value="대구">대구광역시</option>
+                <option value="대전">대전광역시</option>
+                <option value="광주">광주광역시</option>
+                <option value="울산">울산광역시</option>
+            </select>
+            <br>
+
+            <label>Phone Number</label>
+            <select name="tel1">
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="018">018</option>
+                <option value="019">019</option>
+            </select>
+             - <input name="tel2" type="text" maxlength="4" size="4"> 
+             - <input name="tel3" type="text" maxlength="4" size="4">
+            <br>
+
+            <!-- 라디오 버튼: 
+             두개 중 하나를 선택하는 라디오 버튼은 이름이 똑같아야 한다.(중요) 
+             이거 안하면 체크가 중첩해서 체크됨-->
+            <input type="radio" name="gender" checked> male
+            <input type="radio" name="gender"> female
+            <br>
+
+            <label>(단일)첨부파일</label> <!--파일이 하나만 첨부 가능-->
+            <input type="file" name="file">
+            <br>
+
+            <label>(다중)첨부파일</label> <!--파일이 여러 개 첨부 가능-->
+            <input type="file" name="files" multiple>
+            <br>
+
+            <label>자기소개 작성하기</label>
+            <textarea name="intro" placeholder="자기소개를 해주세요"></textarea>
+
+            <br><br><br>
+            <input type="submit" value="회원가입">
+            <input type="reset" value="다시작성">
+
+         </form>
+            
+     
+
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide()/Show()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <p id="para">글자를 보였다 숨겼다 합니다.</p>
+    <button id="hideBtn">숨기기</button>
+    <button id="showBtn">보이기</button>
+
+    <br><br>
+
+    <input type="text" id="userid" placeholder="아이디 입력">
+    <button id="btn">아이디체크</button>
+    <p id="output"></p>
+
+
+    <script>
+
+        let hid = $("#hideBtn");
+        let show = $("#showBtn");
+
+        hid.click(function () {
+            $("#para").hide();
+        });
+
+        show.click(function () {
+            $("#para").show();
+        });
+
+
+        $("#btn").click(function () {
+            let val = $("#userid").val();
+
+            $("#output").text(`${val}은 사용해도 좋습니다.`);
+        })
+
+    </script>
+
+</body>
+
+</html>

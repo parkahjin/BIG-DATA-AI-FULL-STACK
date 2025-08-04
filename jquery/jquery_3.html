@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <style>
+
+
+
+    </style>
+    <title>제이쿼리 실습 예제</title>
+</head>
+
+<body>
+
+    <form id="frmCheck">
+        <label>Userid</label>
+        <input type="text" id="userid">
+        <br>
+
+        <label>Password</label>
+        <input type="password" id="passwd">
+         <br>
+
+        <input type="submit" vlaue="회원가입">
+        <!-- sumit 버튼은 다음 페이지로 무조건 이동을 하는 속성이 있다. -->
+
+        <p id="msg"></p>
+
+        
+    </form>
+
+
+    <script>
+        // enter + click 이 되도록
+        $("#frmCheck").submit(function(e){
+            e.preventDefault();
+
+            let userid = $("#userid").val().trim();
+            let passwd = $("#passwd").val().trim();
+
+            if(userid == "" || passwd == "") {
+                //Ajax 코드
+                $("#msg").text("아이디 또는 비밀번호를 입력해 주세요.")
+                         .css("color", "red");
+            }else{
+                $("#msg").text("회원가입이 완료되었습니다.")
+                         .css("color", "blue");
+            }
+
+        });
+
+    </script>
+    
+</body>
+</html>

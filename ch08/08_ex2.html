@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형사이트 예제</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            padding: 25px 0;
+        }
+
+        header h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        header span {
+            display: none;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 20px 0;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            padding-left: 20px;
+        }
+
+        ul li {
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        main section {
+            flex: 3;
+
+        }
+
+        main section article {
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin-bottom: 20px;
+
+        }
+
+        main aside {
+            flex: 1;
+            background-color: #ddd;
+        }
+
+
+
+
+        footer {
+            background-color: #333;
+            padding: 20px 0;
+        }
+
+        footer p {
+            color: #fff;
+            text-align: center;
+        }
+
+        @media(max-width: 500px) {
+
+            header h1 {
+                font-size: 1rem;
+            }
+
+            header span {
+                display:inline-block;
+            }
+
+            nav {
+                display: none;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            main aside {
+                padding: 20px;
+            }
+
+            ul {
+                flex-direction: column;
+            }
+
+            ul li {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>반응형 시멘틱 웹페이지 <span>버튼</span></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">홈</a>
+            </li>
+            <li>
+                <a href="#">소개</a>
+            </li>
+            <li>
+                <a href="#">서비스</a>
+            </li>
+            <li>
+                <a href="#">연락처</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article>기사1</article>
+            <article>기사2</article>
+        </section>
+        <aside>사이드바</aside>
+    </main>
+
+    <footer>
+        <p>@ 카피라이터</p>
+    </footer>
+
+
+
+</body>
+
+</html>

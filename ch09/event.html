@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼 이벤트 연습하기</title>
+</head>
+<body>
+    
+
+
+
+
+    <button onclick="Hi()">onclikck</button>
+
+    <br><br>
+
+    <p id="text">아이디 중복 체크를 누르세요</p>
+    <button onclick="checkUserid()">중복체크</button>
+
+
+    <script>
+
+        // 함수를 이용해서 안냥
+        function Hi(){
+            console.log("안녕하세요");
+            alert("hi~~");
+        }
+
+        function checkUserid() {
+            //찾아서 p ~ p사이 글자를 가져와서 변경
+            document.getElementById("text").innerText = "사용하셔도 좋습니다.";
+            //document.getElementById("text").innerHTML = "<u><i>사용하셔도 좋습니다.</i></u>";
+            //document.querySelector("#text").innerHTML="사용하셔도 됩니다.";
+        }
+
+    </script>
+
+</body>
+</html>

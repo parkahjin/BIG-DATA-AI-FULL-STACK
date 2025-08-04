@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 태그 선택자(배열-복수선택)</title>
+</head>
+<body>
+    
+    <p>첫 번째 문단입니다. 1</p>
+    <p>두 번째 문단입니다. 2</p>
+    <p>세 번째 문단입니다. 3</p>
+    <button onclick="tagNames_fn()">TagNames</button>
+
+    <button onclick="selectAll_fn()">SelectAll 버튼</button>
+
+    <script>
+
+        function selectAll_fn() {
+            let para = document.querySelectorAll("p"); // 배열명
+            para.forEach((pa, idx) => {console.log(pa.textContent)});
+        }
+
+        function tagNames_fn() {
+            //let value = document.getElementsByTagName("p")[0].textContent;
+            //alert(value);
+            // let arr = document.getElementsByTagName("p");
+            // for(let i=0; i<arr.length; ++i) {
+            //     console.log(arr[i].textContent);
+            // }
+            let value = document.getElementsByTagName("p")
+
+            for (let i=0; i<value.length; i++) {
+                console.log(value[i].textContent)
+            }
+
+            console.log(value)
+
+        }
+
+    </script>
+
+</body>
+</html>

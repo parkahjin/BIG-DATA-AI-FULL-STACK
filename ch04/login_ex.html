@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 화면 예제</title>
+
+
+    <style>
+        .wrap {
+            margin: 0 auto;
+            width: 400px;
+        }
+
+        .log-wrap h1 {
+            text-align: center;
+            color: rgba(24, 165, 24, 0.856);
+        }
+
+        .log-box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        input {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="log-wrap">
+            <h1>NAVER</h1>
+
+            <form method="post">
+                <div class="log-box">
+                    <label>* 아이디</label>
+                    <input type="text" name="userid" required placeholder="아이디 입력">
+                    <br><br>
+
+                    <label>* 비밀번호</label>
+                    <input type="password" name="passwd" required placeholder="비밀번호 입력">
+                    <br><br>
+
+                    <input type="submit" value="로그인">
+                    <!-- 
+                 name 별명: 스프링부트 프로그램으로 처리
+                 id 별명: Ajax(javascript) 프로그래밍
+                 class 별명: javascript, 디자인
+                 -->
+                </div>
+            </form>
+
+
+        </div>
+
+</body>
+
+</html>

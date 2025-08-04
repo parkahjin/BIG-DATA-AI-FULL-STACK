@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+
+        span{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin-right: -6px;
+        }
+
+        .box{
+            background-color: blue;
+            color: #fff;
+        }
+
+        .wrap{
+            display: flex;
+        }
+
+        img{
+            width: 200px;
+            height: 100px;
+        }
+
+    </style>
+    <title>인라인 타입 & 블록타입</title>
+
+</head>
+
+<body>
+    <!-- 
+    인라인: 내용 만큼만 공간 차지(span, a, ,입력폼 전부, img(얘만 높이 너비 먹힘)), 
+            너비와 높이 조절 불가
+
+    블록타입: 내용과 상관없이 한 줄(p 등등), 너비 높이 조절 가능
+    -->
+
+    <!-- inline 타입 메뉴 만들기 -->
+    
+
+    <span>단어1</span>
+    <span>단어2</span>
+    <span>단어3</span>
+
+    <div class="wrap">
+        <span class="box">상자1</span>
+        <span class="box">상자2</span>
+        <span class="box">상자3</span>
+    </div>
+
+
+    <img src="../ch03/images/i01.jpg">
+    <img src="../ch03/images/i02.jpg">
+    
+
+</body>
+
+</html>

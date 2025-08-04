@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일반함수 + 익명함수 + 화살표함수</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // 두 수를 더하는 함수를 작성 후 출력하시오.
+        function add(num1, num2) {
+            return num1 + num2;
+        }
+
+        function disp() {
+            console.log("안녕하세요...");
+        }
+
+        console.log(add(10, 20));
+
+        disp();
+
+        // 익명함수
+        let showInfo = function() {
+            console.log("Welcome...");
+        }
+
+
+        //함수 -> 화살표 함수
+        let show = () => {
+            console.log("Welcome...");
+        }
+        
+        // 하나의 수를 입력 받아서 홀수 짝수 구하기
+        let number = 6;
+        function isEven(number) {
+            if(number % 2 ==0) {
+                return "짝수";
+            }else {
+                return "홀수";
+            }
+        }
+       
+        console.log(`입력한 숫자 ${number}은 ${isEven(number)}입니다.`);
+
+        
+
+    </script>
+
+</body>
+</html>

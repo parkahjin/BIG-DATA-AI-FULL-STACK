@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ㅏㅐ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 비교하기</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+     <style>
+
+        .result {
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+     </style>
+</head>
+
+<body>
+
+    <form id="pwdCheck" action="#" method="post" enctype="multipart/form-data">
+
+        <label>비밀번호</label>
+        <input type="password" id="pwd1"><br>
+
+        <label>비밀번호 확인</label>
+        <input type="password" id="pwd2"><br>
+
+        <input type="submit" value="비밀번호 확인">
+        <!-- <button type="submit">비밀번호 확인</button> -->
+
+        <p id="result" class="result"></p>
+
+    </form>
+
+
+
+<script>
+
+    $("#pwdCheck").submit(function(e){
+        e.preventDefault(); //  다음 페이지로 이동 또는 새로고침 기본 속성
+        let pwd1 = $("#pwd1").val();
+        let pwd2 = $("#pwd2").val();
+
+        if(pwd1 != pwd2) {
+            $("#result").text("비밀번호가 일치하지 않습니다. 확인하세요");
+        }else {
+            $("#result").text("비밀번호가 일치합니다.");
+        }
+    })
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상대크기</title>
+
+<style>
+    html { /* 페이지 전체 기준 */
+        font-size: 16px;
+    }
+
+    .ren_ex{
+        font-size: 1.5rem; /* 24/16 = 1.5rem  */
+    }                     /* 원하는 픽셀 사이즈 / html의 픽셀 = 원하는 rem  */
+
+    .ren_ex p{
+        font-size: 2rem;
+    }
+
+    body{
+        font-size: 20px;
+    }
+
+    .em_example{ /* 원하는 픽셀 사이즈 / 부모의 픽셀 = 원하는 rem  */
+        font-size: 1.5em; 
+    }
+
+    .em_example span{
+        font-size: 0.6em;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+    <!-- em: 16px(부모 요소의 크기를 기준으로 잡음)
+        rem: 16px(html태그를 기준으로 잡음) -->
+    <div class="ren_ex">
+        rem 예제
+        <p>양정인력개발센터입니다.</p>
+    </div>
+
+    <div class="em_example">
+        em 예제입니다.
+        <span>부산광역시입니다.</span>
+    </div>
+
+</body>
+</html>

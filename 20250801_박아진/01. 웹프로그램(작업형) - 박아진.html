@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01. 웹프로그램(작업형) - 박아진</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .yangjung {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .wrap1 {
+            background-color: rgb(31, 140, 243);
+            padding: 20px;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu ul li {
+            text-decoration: none;
+            margin-right: 40px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+       #search {
+        padding: 10px;
+        width: 250px;
+        margin-right: 10px;
+       }
+
+       #searchBtn {
+        background-color: #000;
+        color: #fff;
+        width: 50px;
+        height: 35px;
+       }
+
+       #search-li {
+        margin-left: 1100px;
+       }
+
+        .wrap2 {
+            display: flex;
+            padding: 10px 10px;
+        }
+
+        .add {
+            flex:2;
+            background-color: #e4e4e4;
+            padding: 20px;
+
+        }
+
+        .add p {
+            font-weight: 500;
+        }
+
+        .middle {
+            flex:6;
+        }
+
+        article {
+            background-color: #eee;
+            margin: 10px;
+            padding: 40px;
+        }
+
+        .link {
+            flex:2;
+            background-color: #e4e4e4;
+            padding: 20px;
+        }
+
+        .link ul {
+            padding: 40px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <div class="yangjung">
+            <h1>양정인력개발센터</h1>
+        </div>
+
+        <div class="wrap1">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">과정안내</a></li>
+                    <li><a href="#">질문과답변</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li id="search-li">
+                        <input id="search" type="text" placeholder="검색어 입력">
+                        <button id="searchBtn">검색</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </head>
+
+
+    <main>
+        <div class="wrap2">
+
+            <aside class="add">
+                <h3>광고</h3><br>
+                <p>여기는 광고 영역입니다.</p>
+                <p>배너나 텍스트 광고를 넣을 수 있어요.</p>
+            </aside>
+
+            <div class="middle">
+
+                <article>
+                    <h2>공지사항</h2><br>
+                    <p>이곳은 시멘틱 태그를 사용한 웹사이트의 본문 영역입니다. 사용자에게 보여줄 주요 콘텐츠를 여기에 배치합니다.</p>
+                </article>
+
+                <article>
+                    <h2>오늘의 기사</h2><br>
+                    <p>이곳은 시멘틱 태그를 사용한 웹사이트의 본문 영역입니다. 사용자에게 보여줄 주요 콘텐츠를 여기에 배치합니다.</p>
+                </article>
+
+                <article>
+                    <h2>업데이트 소식</h2><br>
+                    <p>여기는 추가된 두 번째 센션입니다. 최근 공지사항이나 업데이트된 내용을 여기에 담을 수 있습니다.</p>
+                </article>
+            </div>
+
+            <aside class="link">
+                <h3>관련 링크</h3>
+                <ul>
+                    <li><a href="#">블로그</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">이력서</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>
+            &copy; 2025 양정인력개발센터. 모든 권리 보유.
+        </p>
+    </footer>
+
+</body>
+
+</html>
